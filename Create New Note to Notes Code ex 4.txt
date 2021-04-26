@@ -1,0 +1,18 @@
+title Create New Note to Notes Page
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server --> Browser: HTML - Code
+Browser -> Server:  HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server --> Browser: main.css
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_notes
+Server --> Browser: /new_notes
+note over Browser:
+Browser starts executing js-code
+that requests JSON data from server 
+end note
+Browser -> Server: Submit New "Test Note" through Text Field
+Server --> Browser: [{ content: "Test Note" },]
+
+note over Browser:
+Data Must Be displayed on the Browser side as well as Server side.
+end note
